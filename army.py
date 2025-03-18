@@ -5,7 +5,7 @@ class Army:
             1: [ 50, 150, [["Melee", 0.52], ["Flying", 0.67]]],
             2: [ 90, 270, [["Melee", 0.78], ["Flying", 1.01]]],
             3: [160, 480, [["Melee", 1.17], ["Flying", 1.51]]],
-            3: [290, 870, [["Melee", 1.76], ["Flying", 2.26]]],
+            4: [290, 870, [["Melee", 1.76], ["Flying", 2.26]]],
         }
 
         def __init__(self, level, amount=0):
