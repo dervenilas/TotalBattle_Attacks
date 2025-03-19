@@ -8,17 +8,18 @@ importlib.reload(army)
 importlib.reload(monsters)
 importlib.reload(captains)
 from army import Army
-from monsters import Monsters
+from monsters import Monsters, Monsters_rare
 from captains import Captains
 from Attacks import Attack
 #### DO NOT MODIFY THE CODE ABOVE THIS LINE ####
 
 
-bonus_health = 0.72
-bonus_strength = 0.905
-monster = Monsters.Elf(11)
+bonus_health = 0.
+bonus_strength = 0.
+monster = Monsters_rare.Undead(6)
 troops = [Army.Spearman(3), Army.Rider(3), Army.Archers(3)]  
-captain = Captains.Aydae(10)
+troops = [Army.Spearman(3), Army.Rider(3)]  
+captain = Captains.Aydae(0)
 
 
 ### DO NOT MODIFY THE CODE BELOW THIS LINE ###

@@ -72,7 +72,7 @@ class Attack:
         troops_loss  = round( monster_strength * monster.amount  / troops_health   + 0.5 )
         troops_need  = round( monster_health   * monster.amount  / troops_strength + 0.5 )
         
-        # print(f'damage from monster {monster_strength}')
+        # print(f'damage from monster {round(monster_strength * monster.amount+0.5)}')
         # print(f'damage needed to kill the monster {monster_health}')
         # troops_tot   = round(troops_loss + troops_kill)
         # print(f'monster strength: {monster_strength}')
