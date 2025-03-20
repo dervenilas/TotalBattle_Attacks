@@ -204,7 +204,9 @@ class Monsters:
         level_data = {
             1:  [Monster_units.Ghoul(93)],
             6:  [Monster_units.Banshee(210)],
+            12: [Monster_units.Ghoul(1500), Monster_units.Deathhound_Rider(91)],
             13: [Monster_units.Deathhound_Rider(110), Monster_units.Necromancer(380)],
+                        
         }
         
         def __init__(self, level):
@@ -218,8 +220,8 @@ class Monsters_rare:
 
     class Barbarian:
         level_data = {
-            4:  [Monster_units.Ogre_Shaman(4), Monster_units.Wolf_Rider(39), Monster_units.Goblin(70)],
-            9:  [Monster_units.Storm_Crow(6), Monster_units.Wolf_Rider(360), Monster_units.Axe_Thrower(150)],
+            4: [Monster_units.Ogre_Shaman(4), Monster_units.Wolf_Rider(39), Monster_units.Goblin(70)],
+            9: [Monster_units.Storm_Crow(6), Monster_units.Wolf_Rider(360), Monster_units.Axe_Thrower(150)],
         }
 
         def __init__(self, level):
