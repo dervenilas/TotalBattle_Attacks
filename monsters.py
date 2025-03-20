@@ -2,6 +2,14 @@ import copy
 
 class Monster_units:
     
+    class Axe_Thrower:
+        def __init__(self, amount = 1):
+            self.type = ["Barbarian", "Ranged"] 
+            self.strength = 360
+            self.health = 1080
+            self.bonus = [["Melee", 0.45],["Flying", 0.50]]
+            self.amount = amount
+    
     class Banshee:
         def __init__(self, amount = 1):
             self.type = ["Undead", "Ranged"]
@@ -90,6 +98,14 @@ class Monster_units:
             self.bonus = [["Melee", 0.50]]
             self.amount = amount
             
+    class Ogre_Shaman:
+        def __init__(self, amount = 1):
+            self.type = ["Barbarian", "Melee"]
+            self.strength = 3200
+            self.health = 9600
+            self.bonus = [["Mounted", 0.6]]
+            self.amount = amount
+            
     class Overseer:
         def __init__(self, amount = 1):
             self.type = ["Demon", "Ranged"]
@@ -104,6 +120,14 @@ class Monster_units:
             self.strength = 56
             self.health = 168
             self.bonus = [["Mounted", 0.15]]
+            self.amount = amount
+            
+    class Storm_Crow:
+        def __init__(self, amount = 1):
+            self.type = ["Barbarian", "Flying", "Beast"]
+            self.strength = 13000
+            self.health = 39000
+            self.bonus = [["Melee", 0.55],["Elemental", 0.45]]
             self.amount = amount
     
     class Withch_Doctor:
@@ -194,7 +218,8 @@ class Monsters_rare:
 
     class Barbarian:
         level_data = {
-            0:  [Monster_units.Wolf_Rider(1200), Monster_units.Goblin(2800)],
+            4:  [Monster_units.Ogre_Shaman(4), Monster_units.Wolf_Rider(39), Monster_units.Goblin(70)],
+            9:  [Monster_units.Storm_Crow(6), Monster_units.Wolf_Rider(360), Monster_units.Axe_Thrower(150)],
         }
 
         def __init__(self, level):
