@@ -3,43 +3,55 @@ class Captains:
     class Alexander:
         def __init__(self, level) -> None:
             self.level = level
-            self.bonus_health = ['Mounted', self.level/100]
+            self.bonus_health   = ['Mounted', self.level/100]
             self.bonus_strength = ['Mounted', 2*self.level/100]
+            
+    class Aurora:
+        def __init__(self, level) -> None:
+            self.level = level
+            self.bonus_health   = ['', 0]
+            self.bonus_strength = ['', 0]
 
     class Aydae:
         def __init__(self, level) -> None:
             self.level = level
-            self.bonus_health = ['Guardsman', self.level/100]
+            self.bonus_health   = ['Guardsman', self.level/100]
             self.bonus_strength = ['Guardsman', self.level/100]
 
     class Bernard:
         def __init__(self, level) -> None:
             self.level = level
-            self.bonus_health = ['Ranged', self.level/100]
+            self.bonus_health   = ['Ranged', self.level/100]
             self.bonus_strength = ['Ranged', self.level/100]
             
     # class Cleopatra:
     #     def __init__(self, level) -> None:
     #         self.level = level
-    #         self.bonus_health = ['Guardsman', self.level/100]
+    #         self.bonus_health   = ['Guardsman', self.level/100]
     #         self.bonus_strength = ['Guardsman', self.level/100]
+            
+    class Doria:
+        def __init__(self, level) -> None:
+            self.level = level
+            self.bonus_health   = ['',0]
+            self.bonus_strength = ['',0]
     
     class Leonidas:
         def __init__(self, level) -> None:
             self.level = level
-            self.bonus_health = ['Melee', self.level/100]
+            self.bonus_health   = ['Melee', self.level/100]
             self.bonus_strength = ['Melee', 2*self.level/100]
             
     class Lucius:
         def __init__(self, level) -> None:
             self.level = level
-            self.bonus_health = ['Mounted', self.level/100]
+            self.bonus_health   = ['Mounted', self.level/100]
             self.bonus_strength = ['Mounted', self.level/100]
 
     class Minamoto:
         def __init__(self, level) -> None:
             self.level = level
-            self.bonus_health = ['Ranged', self.level/100]
+            self.bonus_health   = ['Ranged', self.level/100]
             self.bonus_strength = ['Ranged', 2 * self.level/100]
 
     def __init__(self):

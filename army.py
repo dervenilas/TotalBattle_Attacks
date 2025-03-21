@@ -1,4 +1,6 @@
 class Army:
+    
+    ###### GUARDSMAN ######
 
     class Archers:
         level_data = {
@@ -50,4 +52,21 @@ class Army:
                 self.strength, self.health, self.bonus = self.level_data[level]
             else:
                 raise ValueError(f"Invalid level {level} for Spearman.")
+            self.amount = amount
+            
+    ###### BEAST ######
+    
+    class Battle_Boar:
+        level_data = {
+            3: [ 3900, 11700, [["Mounted", 1.44], ["Ranged", 1.13]]],
+        }
+
+        def __init__(self, level=3, amount=0):
+            self.type = ["Beast", "Mounted"]
+            self.level = level
+            self.dominace = 6
+            if level in self.level_data:
+                self.strength, self.health, self.bonus = self.level_data[level]
+            else:
+                raise ValueError(f"Invalid level {level} for Battle_Boar.")
             self.amount = amount
