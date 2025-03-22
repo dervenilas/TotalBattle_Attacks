@@ -150,7 +150,8 @@ class Monsters:
 
     class Barbarian:
         level_data = {
-            4:   [Monster_units.Goblin(330)],
+             4:  [Monster_units.Goblin(330)],
+             9:  [Monster_units.Wolf_Rider(510)],
             12:  [Monster_units.Wolf_Rider(1200), Monster_units.Goblin(2800)],
         }
 
