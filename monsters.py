@@ -238,7 +238,7 @@ class Monsters_rare:
             0:  [Monster_units.Withch_Doctor(330)],
         }
         
-        def __init__(self):
+        def __init__(self, level):
             self.level = level
             if level in self.level_data:
                 self.units = copy.deepcopy(self.level_data[level])
